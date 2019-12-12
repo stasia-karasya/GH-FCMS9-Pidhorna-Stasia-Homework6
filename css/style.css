@@ -33,6 +33,7 @@ header.container {
 }
 .logo-link {
   float: left;
+  margin-top: 20px;
 }
 .hamburger-menu {
   float: right;
@@ -65,7 +66,7 @@ header.container {
   transform: translateY(7px);
 }
 .hamburger-menu:hover {
-  background-color: rgba(24,24,25,0.3);
+  background-color: #f7600e;
 }
 .menu-written {
   font-size: 16px;
@@ -79,7 +80,7 @@ h1.main-title {
   font-weight: 800;
   color: #ffffff;
   text-align: center;
-  padding-top: 70px;
+  padding-top: 40px;
 }
 span.accent-text {
   color: #f7600e;
@@ -92,34 +93,34 @@ span.accent-text {
   max-width: 800px;
   margin: 25px auto 75px;
 }
-.btn-container {
+.button-container {
   text-align: center;
   margin: 50px auto;
 }
-.deal-btn {
+.deal-button {
   margin: 0 15px;
   padding: 15px 77px;
   border: 1px solid #65696f;
-  border-radius: 11px;
+  border-radius: 10px;
   background-color: transparent;
   color: #ffffff;
   font-size: 16px;
   font-weight: 600;
   line-height: 40px;
 }
-.check-out-btn {
+.check-out-button {
   margin: 0 15px;
   padding: 15px 70px;
   border: 1px solid #65696f;
-  border-radius: 11px;
+  border-radius: 10px;
   background-color: transparent;
   color: #ffffff;
   font-size: 16px;
   font-weight: 600;
   line-height: 40px;
 }
-.deal-btn:hover,
-.check-out-btn:hover {
+.deal-button:hover,
+.check-out-button:hover {
   border: 1px solid transparent;
   background-color: #f7600e;
 }
@@ -130,10 +131,10 @@ span.accent-text {
   margin-right: auto;
   width: 30px;
   height: 30px;
-  margin-top: 40px;
+  margin-top: 50px;
 }
 .small-icon:hover {
-  background-color: rgba(24,24,25,0.3);
+  background-color: #f7600e;
 }
 .small-icon {
   width: 30px;
@@ -144,16 +145,16 @@ span.accent-text {
   margin: 0;
   display: none;
 }
-.ab-list {
+.abilities-list {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.abil-wrapper {
+.abilities-wrapper {
   display: inline-block;
   width: 25%;
 }
-.abil-icon-border {
+.abilities-icon-border {
   width: 120px;
   height: 120px;
   border: 1px solid #65696f;
@@ -170,20 +171,20 @@ span.accent-text {
   margin: auto;
   text-align: center;
 }
-.abil-title {
+.abilities-title {
   text-align: center;
   font-size: 16px;
   line-height: 40px;
   font-weight: 600;
   color: #3b434c;
 }
-.abil-paragr {
+.abilities-paragraph {
   line-height: 26px;
   color: #3b434c;
   text-align: center;
   padding: 0 20px;
 }
-.ab-list {
+.abilities-list {
   margin: 100px 0;
 }
 .subscribe-container {
@@ -193,31 +194,33 @@ span.accent-text {
   background-color: rgba(11,13,15,0.7);
   padding: 100px 0;
 }
-.email-input {
+.newsletter-subscribe {
   width: 560px;
   padding: 0 20px;
-  border-radius: 7px;
+  border-radius: 10px;
   border: 1px solid transparent;
   margin: 0 15px;
+  font-family: "Open Sans", sans-serif;
   font-size: 16px;
   line-height: 40px;
 }
-.submit-btn {
+.submit-button {
   padding: 0 80px;
   background-color: #f7600e;
-  border-radius: 7px;
+  border-radius: 10px;
   border: 1px solid transparent;
   margin: 0 15px;
   color: #ffffff;
+  font-family: "Open Sans", sans-serif;
   font-size: 16px;
   line-height: 40px;
   font-weight: 600;
 }
-.submit-btn:hover {
+.submit-button:hover {
   background-color: transparent;
   border: 1px solid #65696f;
 }
-.subscr-form {
+.subscribe-form {
   text-align: center;
 }
 .works-container {
@@ -231,7 +234,7 @@ span.accent-text {
   color: #3b434c;
   text-align: center;
 }
-.works-paragr {
+.works-paragraph {
   margin: 0 auto 50px;
   max-width: 460px;
   text-align: center;
@@ -240,25 +243,34 @@ span.accent-text {
   line-height: 30px;
   color: #3b434c;
 }
-.works-img, .our-works-img {
-  width: 350px;
-  height: 350px;
+.works-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-around;
+  max-height: 860px;
+}
+.img-wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+  position: relative;
+  margin: auto;
+  width: 30%;
+}
+.works-img {
+  min-height: 360px;
+  max-width: 360px;
   border: 1px solid transparent;
   border-radius: 10px;
   margin: 15px;
 }
-.img-wrapper {
-  display: inline-block;
-  position: relative;
-  width: 30%;
-  margin: 15px;
-}
-.hover-bckgr {
-  width: 360px;
-  height: 349px;
+.hover-background {
+  min-width: 360px;
+  min-height: 360px;
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 15px;
+  left: -1px;
   display: none;
   background-color: rgba(247,96,14,0.7);
   border: 1px solid transparent;
@@ -282,7 +294,7 @@ span.accent-text {
   top: 120px;
   left: 15px;
 }
-.hover-btn {
+.hover-button {
   font-size: 16px;
   line-height: 40px;
   color: #f7600e;
@@ -290,23 +302,20 @@ span.accent-text {
   height: 50px;
   background-color: #ffffff;
   border: 1px solid transparent;
-  border-radius: 7px;
+  border-radius: 10px;
+  padding-top: 7px;
   position: absolute;
   top: 220px;
   left: 70px;
 }
-.img-wrapper:hover .hover-bckgr {
+.img-wrapper:hover .hover-background {
   display: block;
 }
-.works-wrapper {
-  display: flex;
-}
-.works-img {
-  width: 30%;
-}
-.our-works-img {
-  width: 360px;
-  margin: 0;
+.show-more-button {
+  display: inline-block;
+  color: #3b434c;
+  font-weight: 600;
+  margin: 100px 0;
 }
 .feedback {
   background-blend-mode: multiply;
@@ -377,14 +386,14 @@ span.accent-text {
   font-weight: 600;
   text-align: center;
 }
-.soc-med-icon {
+.social-media-icon {
   width: 25px;
   height: 25px;
   border: 1px solid transparent;
   border-radius: 100px;
   display: inline-block;
 }
-.staff-descr {
+.staff-description {
   line-height: 26px;
   color: #3b434c;
   text-align: center;
@@ -399,7 +408,7 @@ span.accent-text {
 .hover-wrap:hover {
   filter: grayscale(0%);
 }
-.sm-block {
+.social-media-block {
   display: inline-block;
   text-align: center;
 }
@@ -409,7 +418,7 @@ span.accent-text {
   margin-bottom: 50px;
 }
 .greyscale, .staff-name,
-.sm-block, .staff-descr {
+.social-media-block, .staff-description {
   margin: 15px auto;
 }
 .members-dot {
@@ -439,7 +448,7 @@ span.accent-text {
   background-color: rgba(11,13,15,0.7);
   text-align: center;
 }
-.form-title, .form-paragr {
+.form-title, .form-paragraph {
   color: #ffffff;
 }
 .form-title {
@@ -454,6 +463,7 @@ span.accent-text {
   display: inline-block;
   width: 830px;
   height: 200px;
+  font-family: "Open Sans", sans-serif;
   border-radius: 10px;
   border: 1px solid transparent;
   box-sizing: border-box;
@@ -463,26 +473,27 @@ span.accent-text {
 .short-input {
   width: 400px;
   height: 50px;
+  font-family: "Open Sans", sans-serif;
   padding: 0 20px;
   margin: auto;
   border-radius: 10px;
   border: 1px solid transparent;
   box-sizing: border-box;
 }
-.eml-inp {
+.email-input {
   margin-right: 18px;
 }
-.hello-btn {
+.hello-button {
   margin: 0;
 }
-.sm-icon {
+.soc-media-icon {
   width: 45px;
   height: 45px;
   border: 1px solid transparent;
   border-radius: 100px;
   display: inline-block;
 }
-.soc-m-block {
+.social-media-list {
   display: inline-block;
   text-align: center;
   float: right;
@@ -493,14 +504,6 @@ span.accent-text {
   display: inline-block;
   text-align: center;
   margin-bottom: 140px;
-}
-.accent-dot {
-  color: #d42a44;
-  font-weight: bold;
-  font-size: 25px;
-}
-.accent-word {
-  font-weight: bold;
 }
 .copyright, .designed {
   font-size: 16px;
@@ -517,4 +520,9 @@ span.accent-text {
 }
 .designed {
   float: right;
+}
+.small-logo {
+  width: 80px;
+  height: 15px;
+  margin-bottom: -2px;
 }
